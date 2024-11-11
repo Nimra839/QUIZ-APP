@@ -1,0 +1,81 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Quiz Container */
+.quiz-container {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Card for MCQ */
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(16, 4, 123, 0.6), 0 0 30px rgba(0, 255, 183, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* Question Text */
+#question-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Option Styles */
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #4a4a4a;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+/* Neon 3D Effect on Option Hover */
+.option:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 8px rgba(16, 4, 83, 0.7), 0 0 15px rgba(0, 255, 183, 0.5);
+}
+
+/* Next Button */
+#next-button {
+    padding: 10px 20px;
+    background-color: #0b415b;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.2s, box-shadow 0.2s;
+    visibility: hidden; /* Hidden by default */
+}
+
+/* Neon 3D Effect on Next Button Hover */
+#next-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px #190754, 0 0 20px #210e6a;
+}
